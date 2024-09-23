@@ -1,35 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваш Сайт</title>
+    <title>Таинственный остров</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Стили для шапки */
+        header {
+            background-color: #000000; /* Черный цвет фона */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Центрируем содержимое */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Убираем маркеры списка */
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Отступы между элементами меню */
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        /* Стили для ссылок */
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+        }
+
+        /* Эффект при наведении */
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Шапка сайта -->
-<header class="bg-primary text-white py-3">
+<header>
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="h4">Название Сайта</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="h4">Таинственный остров</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Приключения</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 
